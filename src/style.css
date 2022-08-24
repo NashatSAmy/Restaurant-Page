@@ -1,0 +1,277 @@
+/*********************************/
+/*************General*************/
+/*********************************/
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 0px 8px 1px rgb(169 203 189);
+  z-index: 3;
+}
+
+nav button {
+  font-size: 1.2rem;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #23884f;
+  color: #23884f;
+  background-color: white;
+}
+
+nav button:last-of-type {
+  margin: 0;
+}
+
+nav button:hover {
+  cursor: pointer;
+  background-color: #23884f;
+  color: white;
+}
+
+.mainLogo {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  background-color: white;
+  padding: 5px;
+  width: 8%;
+  height: 10%;
+  box-shadow: 0px 0px 8px 1px rgb(169 203 189);
+}
+
+.mainLogo img {
+  width: 100%;
+}
+
+#content {
+  height: 70%;
+  width: 70%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mask {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #00000085;
+  z-index: -1;
+}
+
+/*********************************/
+/*******Home Page Settings********/
+/*********************************/
+
+.homeBody {
+  background: url(./home.jpg) no-repeat;
+  background-size: cover;
+}
+
+.logoHolder {
+  width: 45%;
+  margin-bottom: 4%;
+  background-color: #c9fde6a6;
+  padding: 10px;
+}
+
+.logoHolder img {
+  width: 100%;
+}
+
+.copy {
+  font-size: xxx-large;
+  color: #baffe0;
+  width: 80%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*********************************/
+/******Order Page Settings********/
+/*********************************/
+
+.orderBody {
+  background: url(./order.jpg) no-repeat;
+  background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+}
+
+.right,
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 1.8rem;
+  color: #baffe0;
+}
+
+input {
+  font-size: 1rem;
+  padding: 5px;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #baffe0;
+}
+
+fieldset label {
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+fieldset input {
+  width: initial;
+  padding: initial;
+  margin-left: 10px;
+}
+
+legend {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+textarea {
+  background-color: white;
+}
+
+#orderNow {
+  position: relative;
+  margin: auto;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #23884f;
+  color: #23884f;
+  background-color: white;
+  width: 50%;
+}
+
+#orderNow:hover {
+  cursor: pointer;
+  background-color: #23884f;
+  color: white;
+}
+
+.banner {
+  font-size: 2.5rem;
+  background-color: white;
+  color: #23884f;
+  width: 60%;
+  padding: 25px;
+  text-align: center;
+  margin-top: -70px;
+  margin-bottom: 35px;
+}
+
+/*********************************/
+/*******Menu Page Settings********/
+/*********************************/
+
+.menuBody {
+  background: url(./menu.jpg) no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  padding-left: 10%;
+  box-sizing: border-box;
+  width: 100% !important;
+}
+
+.mealsMenu {
+  display: grid;
+  width: 80%; 
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3%;
+  row-gap: 10%;
+  column-gap: 2%;
+  grid-auto-rows: 270px;
+}
+
+.meal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  border: white 2px solid;
+}
+
+.meal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meal p {
+  background-color: #000000b0;
+  position: absolute;
+  width: 100%;
+  top: 76%;
+  line-height: 1.5;
+  padding: 5px 10px 5px 10px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.mealName {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+}
